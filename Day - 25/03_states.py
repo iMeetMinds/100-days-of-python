@@ -25,10 +25,7 @@ while len(guessed_state) < 50:
         tim = StatePrint(x_cor, y_cor, state_det.state.item())
         guessed_state.append(state_det.state.item())
 
-remaining_states = []
-for n in state_list:
-    if not n in guessed_state:
-        remaining_states.append(n)
+remaining_states = [n for n in state_list if not n in guessed_state]
 
 new_data = pandas.DataFrame(remaining_states)
 new_data.to_csv('states_to_learn.csv')
