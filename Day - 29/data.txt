@@ -1,0 +1,2 @@
+facebook || example@gmail.com || 123456788 
+google || example@gmail.com || 123456788 
