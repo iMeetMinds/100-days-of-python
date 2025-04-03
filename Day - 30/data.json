@@ -2,5 +2,13 @@
     "Facebook": {
         "email": "example@gmail.com",
         "password": "C**o4#2Vo(i0yOS"
+    },
+    "Google": {
+        "email": "example@gmail.com",
+        "password": "%B0h+F7JtDj%n#"
+    },
+    "Amazon": {
+        "email": "example@gmail.com",
+        "password": "BF9vCgD)*dK#g85"
     }
 }
