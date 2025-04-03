@@ -86,29 +86,29 @@ canvas.create_image(100,100, image=logo_img)
 canvas.grid(column=1, row=0)
 
 website_label = Label(text="Website:")
-website_label.grid(column=0, row=1)
+website_label.grid(column=0, row=1, sticky="w")
 email_label = Label(text="Email/Username:")
-email_label.grid(column=0, row=2)
+email_label.grid(column=0, row=2, sticky="w")
 password_label = Label(text="Password")
-password_label.grid(column=0, row=3)
+password_label.grid(column=0, row=3, sticky="w")
 
 
 website_input = Entry(width=20, justify='left')
-website_input.grid(column=1, row=1)
+website_input.grid(column=1, row=1, sticky="ew")
 website_input.focus()
 email_input = Entry(width=50, justify='left')
-email_input.grid(column=1, row=2, columnspan=2)
+email_input.grid(column=1, row=2, columnspan=2, sticky="ew")
 email_input.insert(0, "example@gmail.com")
 password_input = Entry(width=20, justify='left')
-password_input.grid(column=1, row=3)
+password_input.grid(column=1, row=3, sticky="ew")
 
 
 search_btn = Button(text="Search", command=find_password, width=20, justify='left')
-search_btn.grid(column=2, row=1)
+search_btn.grid(column=2, row=1, sticky="ew")
 gen_password_btn = Button(text="Generate Password", command=password_generator, width=20, justify='left')
-gen_password_btn.grid(column=2, row=3)
+gen_password_btn.grid(column=2, row=3, sticky="ew")
 add_button = Button(text="Add", width=35, command=save_password)
-add_button.grid(column=1, row=4, columnspan=2)
+add_button.grid(column=1, row=4, columnspan=2, sticky="ew")
 
 
 window.mainloop()
